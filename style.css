@@ -54,7 +54,7 @@ img{
 }
 
 .nav-menu li{
-    display: none;
+    
     line-height: 30px;
     margin: 50px 0;
     transition: all .5s;
@@ -73,12 +73,16 @@ img{
 
 #check:checked ~ .nav-menu{
     height: 100vh;
+    
 }
 
 #check:checked ~ .nav-menu li{
     display: block;
 }
 
+.bar-btn{
+    z-index: 100;
+}
 
 
 .header-information{
@@ -349,6 +353,7 @@ img{
         text-align: right;
         margin-right: 1rem;
         height: 100%
+        
     }
 
     .nav-menu li {
@@ -398,7 +403,12 @@ img{
     .card-app{
         width: 30%;
     }
-    
+    #check:checked ~ .nav-menu{
+        height: 100%
+    }
+    #check:checked ~ .nav-menu li{
+        display: inline-block;
+    }
     
 }
 
